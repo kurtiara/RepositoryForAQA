@@ -1,6 +1,6 @@
 describe("Preliminary test suite", () => {
   beforeEach(() => {
-    cy.visit("");
+    cy.visit("https://difmark.com/");
   });
 
   it("Search Check", () => {
