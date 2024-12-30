@@ -1,5 +1,12 @@
 {
+  "scripts": {
+  "cy:open:prod": "cypress open --config-file cypress/e2e/Lesson20/Config/cypress.config.prod.js",
+  "cy:run:prod": "cypress run --config-file cypress/e2e/Lesson20/Config/cypress.config.prod.js",
+  "cy:open:dev": "cypress open --config-file cypress/e2e/Lesson20/Config/cypress.config.dev.js",
+  "cy:run:dev": "cypress run --config-file cypress/e2e/Lesson20/Config/cypress.config.dev.js"
+},
   "devDependencies": {
-    "cypress": "^13.17.0"
+    "cypress": "^13.17.0",
+    "mochawesome": "^7.1.3"
   }
 }

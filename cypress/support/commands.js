@@ -1,3 +1,17 @@
+Cypress.Commands.add("login", () => {
+  cy.visit("", {
+    auth: {
+      username: "guest",
+      password: "welcome2qauto",
+    },
+  });
+  cy.contains("button", "Sign In").click();
+  cy.get("input#signinEmail").type(Cypress.env("username"));
+  cy.get("input#signinPassword").type(Cypress.env("password"));
+  cy.get("input#remember").click();
+  cy.contains("button", "Login").click();
+});
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
