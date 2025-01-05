@@ -10,6 +10,13 @@ module.exports = defineConfig({
     //   runMode: 2, // Повторить 2 раза при запуске через CLI
     //   openMode: 1, // Повторить 1 раз при запуске через GUI
     // },
+    reporter: "mochawesome",
+    reporterOptions: {
+      reportDir: "cypress/reports/mochawesome",
+      overwrite: false,
+      html: true,
+      json: true,
+    },
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
